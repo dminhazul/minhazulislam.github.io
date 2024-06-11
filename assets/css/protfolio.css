@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  margin: 0;
+  padding: 0;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #eaec84), to(#fcff50)); */
+  background: linear-gradient(to right, #ffffff 50%, #ffffff 100%);
+}
+
+.sec-resume {
+  margin: 159px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sec-resume {
+    margin: 160px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sec-resume {
+    margin: 160px 0;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.work small,
+.edu small,
+.curricular small {
+  display: block;
+  opacity: 0.7;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.301);
+
+}
+
+.work ul li,
+.edu ul li,
+.curricular ul li {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 35px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.work ul li:hover::before,
+.edu ul li:hover::before,
+.curricular ul li:hover::before {
+  -webkit-animation: circle 1.2s infinite;
+          animation: circle 1.2s infinite;
+}
+
+.work ul li:hover span,
+.edu ul li:hover span,
+.curricular ul li:hover span {
+  color: #ed1c6f;
+}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #ed1c6f;
+            box-shadow: 0 0 0 0px #ed1c6f;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes circle {
+  from {
+    -webkit-box-shadow: 0 0 0 0px #ed1c6f;
+            box-shadow: 0 0 0 0px #ed1c6f;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+.work ul li:last-of-type,
+.edu ul li:last-of-type,
+.curricular ul li:last-of-type {
+  padding-bottom: 3px;
+}
+
+.work ul li:last-of-type::after,
+.edu ul li:last-of-type::after,
+.curricular ul li:last-of-type::after {
+  border-radius: 1.5px;
+}
+
+.work ul li::before,
+.work ul li::after,
+.edu ul li::before,
+.edu ul li::after,
+.curricular ul li::before,
+.curricular ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.work ul li::before,
+.edu ul li::before,
+.curricular ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid #0e1442;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+
+.work ul li::after,
+.edu ul li::after,
+.curricular ul li::after {
+  width: 3px;
+  height: 100%;
+  background: #0e1442;
+  left: 5px;
+  top: 0;
+}
+
+.work ul li span,
+.edu ul li span,
+.curricular ul li span {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+@media only screen and (max-width: 800px) {
+  .edu {
+    margin-top: 100px;
+  }
+  .curricular {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=protfolio.css.map */

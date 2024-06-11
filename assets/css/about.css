@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+#about-first {
+  margin-top: 150px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background: -webkit-gradient(linear, left top, right top, color-stop(50%, #eaec84), to(#fcff50)); */
+  background: linear-gradient(to right, #ffffff 50%, #ffffff 100%);
+}
+
+.about-overlay {
+  position: absolute;
+  height: 500px;
+  width: 900px;
+  background-color: #ffd369;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.274);
+}
+
+.about-text {
+  padding: 60px;
+  /* position: relative; */
+  color: #ff5233;
+  font-size: 30px;
+  font-family: monospace;
+  text-align: justify;
+   /*line-height: 1.4em;*/
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.281);
+}
+.about-text:hover {
+  color: #ff2600;
+}
+/* .about-imoverlay
+{
+  height: 500px;
+  width: 800px;
+  background-color: #ffd369;
+} */
+.about-image {
+  height: 100%;
+  /* margin-top: 25px; */
+  width: 100%;
+  border: 12px solid #3E3E3E !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.89);
+
+}
+.about-text {
+  padding: 60px;
+  color: #222831;
+  font-size: 30px;
+  font-family: monospace;
+  text-align: justify;
+  line-height: 1.4em;
+}
+
+.about-text:hover {
+  color: #101216;
+
+}
+
+.about-image {
+  height: auto;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.skilltool {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.281);
+}
+
+.skilldotted {
+  padding: 50px;
+  border: 4px dotted #ffd369;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.tooldotted {
+  padding: 50px;
+  border: 4px dotted #ffd369;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.164);
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill ul li:hover::before,
+.tool ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+
+.skill ul li:hover span,
+.tool ul li:hover span {
+  color: #ed1c6f;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #ed1c6f;
+  }
+
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+.skill ul li::before,
+.skill ul li::after,
+.tool ul li::before,
+.toll ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+@media only screen and (max-width: 1200px) {
+  .about-text {
+    line-height: 1.2em;
+  }
+  .about-image {
+    height: auto;
+    width: 100%;
+  }
+  .about-overlay {
+    width: 670px;
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-text {
+    font-size: 20px;
+    padding: 40px;
+    line-height: 1em;
+  }
+
+  .about-image {
+    height: 100%;
+    width: 100%;
+
+  }
+  .about-overlay{
+      width: 87%;
+      height: 400px;
+  }
+}
